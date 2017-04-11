@@ -1,4 +1,5 @@
-package com.Array;
+package test.array;
+
 
 import com.Array.Operations.ArrayAddition;
 import junit.framework.TestCase;

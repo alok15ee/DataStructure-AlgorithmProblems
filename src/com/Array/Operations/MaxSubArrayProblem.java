@@ -55,7 +55,6 @@ public class MaxSubArrayProblem {
             if( rightBorderSum > maxRightBorderSum )
                 maxRightBorderSum = rightBorderSum;
         }
-
 /*
         return max3( leftMaxSum, rightMaxSum,
                 maxLeftBorderSum + maxRightBorderSum );*/
