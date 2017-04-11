@@ -5,15 +5,10 @@ package test.recursion;
  */
 
 
-import  static org.junit.Assert.*;
-
 import com.recursion.GCD;
 import junit.framework.TestCase;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.Test.*;
 
 public class TestGCD extends TestCase {
 
