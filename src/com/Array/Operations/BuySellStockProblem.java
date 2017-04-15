@@ -11,15 +11,16 @@ package com.Array.Operations;
 
 public class BuySellStockProblem {
 
-    Integer currentPrice = 0;
-    Integer maxSellingProfit = 0;
+    private Integer currentPrice = 0;
+    private Integer maxSellingProfit = 0;
+    private Integer minSellingPrice = 0;
 
     public BuySellStockProblem() {
     }
     public Integer findMaximumProfit(Integer shareArr[]){
         //Time Complexity O(n)
-
-        Integer minSellingPrice = shareArr[0];
+        //Space Complexity O(1)
+        minSellingPrice = shareArr[0];
         for(Integer i= 1; i < shareArr.length; i++ ){
             currentPrice = shareArr[i];
             if (minSellingPrice > currentPrice){
@@ -32,4 +33,17 @@ public class BuySellStockProblem {
         }
         return maxSellingProfit;
     }
+
+    public Integer allTimeProfit(Integer shareArr[]){
+        //Time Complexity O(n)
+        //Space Complexity O(1)
+        Integer maxProfit=0;
+        for (Integer i =1; i <shareArr.length  ; i++){
+            if (shareArr[i] > shareArr[i-1]){
+                maxProfit += shareArr[i]- shareArr[i-1];
+            }
+        }
+        return maxProfit;
+    }
+
 }

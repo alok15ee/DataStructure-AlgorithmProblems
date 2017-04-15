@@ -28,6 +28,26 @@ public class BuySellStockTest extends TestCase {
     public void testFindMaximumProfitTwo(){
         Integer[] shareArray = {7, 6, 4, 3, 1};
         Integer result = buySellStockProblem.findMaximumProfit(shareArray);
-        assertEquals(result.intValue(),8);
+        assertEquals(result.intValue(),0);
     }
+
+    @Test
+    public void testAllTimeProfit(){
+        Integer[] shareArray = {7, 1, 5, 3, 6, 4};
+        Integer result = buySellStockProblem.allTimeProfit(shareArray);
+        assertEquals(result.intValue(), 7);
+    }
+
+    @Test
+    public void testAllTimeProfitTwo(){
+        Integer[] shareArray = {6,4,1,3,5,7,3,1,3,4,7,9,2,5,6,0,1,2};
+        Integer result = buySellStockProblem.allTimeProfit(shareArray);
+        assertEquals(result.intValue(), 20);
+    }
+
+    @org.junit.After
+    public void tearDown() throws Exception {
+
+    }
+
 }
