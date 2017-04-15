@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by aksingh on 10-04-2017.
  */
-public class ArrayMainTest extends TestCase {
+public class ArrayAdditionTest extends TestCase {
 
     private ArrayAddition arrayAddition;
 
